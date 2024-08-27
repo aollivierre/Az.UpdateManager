@@ -1,6 +1,13 @@
 
 #This needs to be done in PS5 not in PS7
 
+if ($PSVersionTable.PSVersion.Major -ne 5) {
+    Write-Host "Switching to PowerShell 5..."
+    $ps5Path = "${env:SystemRoot}\System32\WindowsPowerShell\v1.0\powershell.exe"
+    Start-Process -FilePath $ps5Path -ArgumentList "-File `"$($MyInvocation.MyCommand.Path)`"" -Wait
+    exit
+}
+
 # Install Az module if not already installed
 Install-Module -Name Az.Accounts -AllowClobber -Force -Scope AllUsers
 
