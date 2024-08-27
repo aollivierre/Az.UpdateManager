@@ -1,5 +1,7 @@
-#First install the modules by running 0-Install-Az.Accounts.ps1 in your Elevated PS5 terminal
+#First Clone the repo or download this entire folder to your local machine
 
-#Second run this from either PS5 or PS7
+#Second install the modules by running 0-Install-Az.Accounts.ps1 in your Elevated PS5 terminal
 
-& "C:\Code\Az.UpdateManager\MigratefromAutomationAccount" 
+#Third run this from either PS5 or PS7 for example
+
+& "C:\Code\Az.UpdateManager\MigratefromAutomationAccount\1-call.ps1"
