@@ -2,8 +2,6 @@
 # AzureCloud" -$AutomationAccountAzureEnvironment "AzureCloud"
 
 
-
-
 # & "C:\Code\CB\Azure\Antea\1-Migrate-From-UpdateManager.ps1" -AutomationAccountResourceId "/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.Automation/automationAccounts/{aaName}" -AutomationAccountAzureEnvironment "AzureCloud"
 
 
